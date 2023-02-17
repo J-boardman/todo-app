@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script type="module" src="./script.js" defer></script>
+    <title>To-do List </title>
+  </head>
+  <body data-theme="light" class="min-h-screen">
+    <section class="max-w-4xl mx-auto grid gap-4 p-4">
+      <header class="flex justify-between items-end">
+        <h1 class="text-5xl">Todo List</h1>
+        <button data-toggleTheme><i class="ri-sun-line"></i></button>
+      </header>
+      <form>
+        <input type="text" class="input input-bordered" placeholder="Enter todo..." required/>
+        <input type="date" class="input input-bordered" />
+        <button class="btn btn-primary">Add</button>
+      </form>
+
+      <section class="todos grid gap-2 p-4 border border-base-content rounded-lg border-opacity-20"></section>
+    </section>
+  </body>
+</html>
